@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ns Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div><img src="img/HEADER-LOGO.png" class="logo"></div>
+
+    </div>
+
+
+
+    <div class="card">
+        <div class="main-card">
+            <div class="search">
+                <input id="city" type="search" class="searchButton" placeholder="Enter City Name.......">
+                <button class="btn" type="submit" id="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="weather">
+                <img src="img/main-clear.webp" class="weather-icon">
+                <h1 class="temp">0</h1>
+                <h2 class="city">city</h2>
+                <h2 class="situation"></h2>
+            </div>
+        </div>
+        <div class="other-card">
+            <div class="details" id="cardsection">
+
+                <div class="col">
+                    <img src="img/New Project (1).png" class="infoImg">
+                    <div>
+                        <p class="humidity"></p>
+                        <h4>humidity</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="img/New Project (2).png" class="infoImg">
+                    <div>
+                        <p class="wind"></p>
+                        <h4>wind</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="details3" id="cardsection">
+
+                
+                <div class="col">
+                    <div class="temp">
+                        <h1 class="feel">0</h1>
+                        <h2 class="title-temp">feel like</h2>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="temp">
+                        <h1 class="min-tem">0</h1>
+                        <h2 class="title-temp">min tempreture</h2>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="temp">
+                        <h1 class="max-tem">0</h1>
+                        <h2 class="title-temp">max tempreture</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div id="nds">
+        <h6 class="nds">created by nayan sukhadiya <i class="fa-solid fa-heart"></i></h6>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/ccefff6d75.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

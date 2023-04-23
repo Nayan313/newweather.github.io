@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda:opsz@6..96&family=Cormorant+Garamond:wght@300;400&family=Elsie&family=Gotu&family=Gruppo&family=Italiana&family=Josefin+Sans:wght@200&family=Julius+Sans+One&family=Lexend:wght@300&family=Libre+Bodoni&family=Limelight&family=Montserrat:wght@100&family=Mr+De+Haviland&family=Pinyon+Script&family=Roboto+Condensed:wght@300&family=Share+Tech+Mono&family=Text+Me+One&family=Urbanist:wght@200;300&family=Vazirmatn&family=Wire+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-transform: capitalize;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.background {
+
+    z-index: -10;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    background: transparent;
+    height: 10vh;
+}
+
+.logo {
+    position: absolute;
+    left: 2px;
+    width: 45vh;
+}
+
+#nds {
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    background: rgba(21, 22, 22, 0.554);
+    color: #ffffff;
+}
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.weather {
+    background: linear-gradient(135deg, #00feba, #897ce0);
+    color: azure;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 10vh;
+    width: 100%;
+    height: 63vh;
+}
+
+#cardsection {
+    background: transparent;
+    color: azure;
+    border-radius: 20px;
+    text-align: center;
+    margin: 2vh 0;
+    width: 95%;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    padding: 28px 20px;
+    justify-content: space-evenly;
+}
+
+.main-card {
+    position: relative;
+    width: 25%;
+    height: 100%;
+}
+
+.search {
+    position: absolute;
+    top: 1vh;
+    z-index: 6;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchButton {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 40px;
+    border-radius: 13px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 13px;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.other-card {
+    width: 65%;
+    position: relative;
+}
+
+#tempicon {
+    color: rgb(255, 255, 255);
+    font-size: 12vh;
+}
+
+.temp h1 {
+    color: #897ce0;
+    font-size: 7vh;
+}
+
+.title-temp {
+    font-size: 3vh;
+}
+
+.col {
+    padding: 40px 20px;
+
+}
+
+.infoImg {
+    width: 20%;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        display: flow-root;
+        background: linear-gradient(135deg, #00feba, #897ce0);
+    }
+
+    .header {
+        position: absolute;
+    }
+
+    .weather {
+        top: 12vh;
+        border-radius: 0px;
+    }
+
+    .card {
+        margin-top: 10vh;
+        display: flow-root;
+        margin-bottom: 3vh;
+    }
+
+    #cardsection {
+        display: contents;
+    }
+
+    .main-card {
+        width: 100%;
+    }
+
+    .other-card {
+        width: 100%;
+    }
+
+    .details {
+        margin-top: 1vh;
+    }
+
+    .search {
+        top: -10vh;
+        left: 1vh;
+        width: 90%;
+    }
+
+    .searchButton {
+        height: 60px;
+        width: 70%;
+    }
+
+    #tempicon {
+        color: rgb(255, 255, 255);
+        font-size: 2vh;
+    }
+
+    .temp h1 {
+        color: #897ce0;
+        font-size: 10vh;
+    }
+
+    .title-temp {
+        font-size: 3vh;
+    }
+
+    p {
+        font-size: 9vh;
+    }
+
+    h4 {
+        font-size: 5vh;
+    }
+
+    #nds {
+        font-size: 2vh;
+    }
+}
